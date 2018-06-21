@@ -28,7 +28,6 @@ make setup && make
 Usage of ./bin/crux:
       crux.config              Optional config file
       --alwayssendto string    List of public keys for nodes to send all transactions too
-      --berkeleydb             Use Berkeley DB for storage
       --generate-keys string   Generate a new keypair
       --othernodes string      "Boot nodes" to connect to to discover the network
       --port int               The local port to listen on (default -1)

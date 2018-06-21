@@ -13,7 +13,6 @@ func TestInitFlags(t *testing.T) {
 	expected := map[string]interface{}{
 		Port:         -1,
 		Verbosity:    1,
-		BerkeleyDb:   false,
 		GenerateKeys: "",
 		AlwaysSendTo: "",
 		Storage:      "crux.db",

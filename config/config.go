@@ -23,7 +23,6 @@ const (
 
 	GenerateKeys = "generate-keys"
 
-	BerkeleyDb = "berkeleydb"
 	UseGRPC = "grpc"
 
 	Tls = "tls"
@@ -50,8 +49,6 @@ func InitFlags() {
 	flag.String(PublicKeys, "", "Public keys hosted by this node")
 	flag.String(PrivateKeys, "", "Private keys hosted by this node")
 	flag.String(Storage, "crux.db", "Database storage file name")
-	flag.Bool(BerkeleyDb, false,
-		"Use Berkeley DB for working with an existing Constellation data store [experimental]")
 
 	flag.Int(Verbosity, 1, "Verbosity level of logs")
 	flag.String(AlwaysSendTo, "", "List of public keys for nodes to send all transactions too")

@@ -55,12 +55,6 @@
   revision = "ef8a98b0bbce4a65b5aa4c368430a80ddc533168"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/jsimonetti/berkeleydb"
-  packages = ["."]
-  revision = "5cde5eaaf78c6510c5f64f5347244806a06ba87b"
-
-[[projects]]
   name = "github.com/kevinburke/nacl"
   packages = [
     ".",

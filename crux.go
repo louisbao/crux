@@ -67,11 +67,7 @@ func main() {
 
 	var db storage.DataStore
 	var err error
-	if config.GetBool(config.BerkeleyDb) {
-		db, err = storage.InitBerkeleyDb(storagePath)
-	} else {
-		db, err = storage.InitLevelDb(storagePath)
-	}
+	db, err = storage.InitLevelDb(storagePath)
 
 	if err != nil {
 		log.Fatalf("Unable to initialise storage, error: %v", err)
